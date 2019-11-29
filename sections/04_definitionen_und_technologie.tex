@@ -10,28 +10,36 @@ In dieser Sektion werden die Grundlegenden Technologie und Definitionen beschrie
 
 Die SAE-Level \cite{standardSAE} beschreiben den Grad an Autonomie bei autonomen Fahrzeugen. Sie werden dabei in 6 unterschiedliche Stufen unterschieden und wurden von der \citeauthor{standardSAE} definiert.\\
 
-\textbf{Level 0 - Keine Automatisierung.} Der Fahrer übernimmt die volle Kontrolle über das Fahrzeug.
+\subsubsection*{Level 0 - Keine Automatisierung} Der Fahrer übernimmt die volle Kontrolle über das Fahrzeug.
 
-\textbf{Level 1 - Fahrassistenz.} Der Fahrer wird durch einen einzelnen Fahrassistenten, z.B. Tempomat, Spurhalteassistent oder Bremsassistent, unterstützt, behält jedoch die volle Kontrolle über das Fahrzeug.
+\subsubsection*{Level 1 - Fahrassistenz} Der Fahrer wird durch einen einzelnen Fahrassistenten, z.B. Tempomat, Spurhalteassistent oder Bremsassistent, unterstützt, behält jedoch die volle Kontrolle über das Fahrzeug.
 
-\textbf{Level 2 - Partielle Automatisierung.} Der Fahrer wird durch mehrere Fahrassistenten unterstützt and hat immer die Kontrolle über das Fahrzeug.
+\subsubsection*{Level 2 - Partielle Automatisierung} Der Fahrer wird durch mehrere Fahrassistenten unterstützt and hat immer die Kontrolle über das Fahrzeug.
     
-\textbf{Level 3 - Bedingte Automatisierung.}
-Das Fahrzeug ist in der Lage die Umgebung zu erkennen und ist in der Lage eigenständig in bestimmten Fahrsituationen zu meistern. Ein aufmerksamer Fahrer ist noch erforderlich, der unter Umständen einschreiten kann.
+\subsubsection*{Level 3 - Bedingte Automatisierung} Das Fahrzeug ist in der Lage die Umgebung zu erkennen und ist in der Lage eigenständig in bestimmten Fahrsituationen zu meistern. Ein aufmerksamer Fahrer ist noch erforderlich, der unter Umständen einschreiten kann.
 
-\textbf{Level 4 - Hohe Automatisierung.} Das Fahrzeug ist in der Lage sich eigenständig in den meisten Fahrumgebungen zu manövrieren. Es erkennt Fehlentscheidungen und kann auf diese reagieren. Menschliches einschreiten ist, wenn gewünscht, möglich.
+\subsubsection*{Level 4 - Hohe Automatisierung} Das Fahrzeug ist in der Lage sich eigenständig in den meisten Fahrumgebungen zu manövrieren. Es erkennt Fehlentscheidungen und kann auf diese reagieren. Menschliches einschreiten ist, wenn gewünscht, möglich.
 
-\textbf{Level 5 - Volle Automatisierung.} Das Fahrzeug kann in allen Umgebungen und zu jederzeit und in jeder Situation komplett eigenständig Fahren.
+\subsubsection*{Level 5 - Volle Automatisierung} Das Fahrzeug kann in allen Umgebungen und zu jederzeit und in jeder Situation komplett eigenständig Fahren.
 
 \subsection{Sensoren}
 
+In Autonomen Fahrzeugen kommen unterschiedliche Arten von Sensoren zum Einsatz. 
+Dazu gehören Kameras, Radars, spezielle Laserscanner und Ultraschallsensoren.\\
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.485\textwidth]{resources/images/sensors.png}
-    \caption{Sensoren eines autonomen Fahrzeugs \cite{smith2015automated}}
+    \caption{Sensoren eines autonomen Fahrzeuges \cite{smith2015automated}}
 \end{figure}
 
+Kameras können rund um das Fahrzeug montiert werden und ermöglichen dem Fahrzeug somit eine vollumfängliche Sicht auf das Verkehrsgeschehen. Ein Vorteil gegenüber einem menschlichen Fahrer ist, das auch tote Winkel mit Kameras überwacht werden können. Lediglich durch die geschossenen Bilder der Kameras lässt sich jedoch die Entfernung zu erkannten Objekten schlecht einschätzen.\\
+
+Hier kommt die LIDAR-Technologie \cite{himmelsbach2008lidar} ins Spiel. LIDAR steht für \textit{Light Detection and Ranging}. Es handelt sich um eine Umgebungsüberwachungstechnik die mit Hilfe eines Lasers Objekte in der Nähe bestrahlt und die Reflexion mit einem Sensor misst. So kann die Entfernung zu den Objekten berechnet werden.\\
+
+Radar-Systeme \cite{introductionToRadarSystems} funktionieren ähnlich wie LIDAR-Systeme. Anstatt von Lichtwellen werden Radiowellen eingesetzt. Objekte in der Umgebung erzeugen ein Echo, welches vom einem Sensor empfangen wird. Somit ist ein Radar-System in der Lage die Distanz, Position und Geschwindigkeit von Objekten zu berechnen.\\
+
+Ultraschall\\
 
 
 \subsection{Vehicular Ad-hoc Network}
