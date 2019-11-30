@@ -39,10 +39,14 @@ Hier kommt die LIDAR-Technologie \cite{himmelsbach2008lidar} ins Spiel. LIDAR st
 
 Radar-Systeme \cite{introductionToRadarSystems} funktionieren ähnlich wie LIDAR-Systeme. Anstatt von Lichtwellen werden Radiowellen eingesetzt. Objekte in der Umgebung erzeugen ein Echo, welches vom einem Sensor empfangen wird. Somit ist ein Radar-System in der Lage die Distanz, Position und Geschwindigkeit von Objekten zu berechnen.\\
 
-Ultraschall\\
+Neben Radar- und LIDAR-Systemen können weitere Sensoren in autonomen Fahrzeugen zum Einsatz kommen. Hierzu zählen beispielsweise Ultraschall und Infrarot.
+Ultraschall wird auch in der Natur von Fledermäusen eingesetzt. Es funktioniert ähnlich wie ein Radar, hat jedoch eine geringere Reichweite und ist somit besser geeignet um Objekte in der direkten Umgebung des Fahrzeuges zu erkennen.\\
 
+Mit Hilfe der verschiedenen Sensorsystemen, ist man in der Lage ein komplettes 3D-Abbild der Umgebung zu erstellen. Durch den Einsatz von Radar können selbst Objekte die sich hinter anderen Objekten, und somit mit rein optischen Sensoren nicht zu erkennen wären, entdeckt werden. Damit hat ein autonomes Fahrzeug einen entscheidenden Vorteil gegenüber einem Menschen, der Objekte außerhalb seines Sichtfeldes nicht identifizieren kann.\\
 
 \subsection{Vehicular Ad-hoc Network}
+
+Fahrzeuge vernetzen sich mit anderen Fahrzeugen und der Infrastruktur über ein \textit{VANET}. Das \textit{VANET} ist eine Abwandlung des \textit{MANETs (Mobile Ad-hoc Network)}. 
 
 \begin{figure}[H]
     \centering
@@ -50,4 +54,8 @@ Ultraschall\\
     \caption{Übersichtsgrafik eines VANETs \cite{vanet}}
 \end{figure}
 
+Durch die Verwendung von VANETs sind Fahrzeuge in der Lage untereinander und mit der Infrastruktur zu kommunizieren. Somit kann eine Ampel ihren aktuellen Status an das passierende Fahrzeug senden und Ihm mitteilen ob Sie Rot, Gelb oder Grün leuchtet. Das Fahrzeug kann darauf hin eine Entscheidung Treffen wie es sich verhalten soll. Eine weitere Anwendungsmöglichkeit ist beispielsweise die Stauerkennung. Fahrzeuge können untereinander kommunizieren ob Sie sich in einem Stau befinden. So können andere Verkehrsteilnehmer gewarnt werden und entsprechende Stauabschnitte automatisch Umfahren werden.
+
 \subsection{Software}
+
+In autonomen Fahrzeugen kommt unterschiedliche Software zum Einsatz. Algorithmen aggregieren die Daten der Sensoren und treffen Entscheidungen über den Fahrtverlauf. Außerdem übernimmt Software die Kommunikation zu anderen Verkehrsteilnehmer und der Infrastruktur. Damit sich die Fahrzeuge besser orientieren können werden hochauflösende Karten eingesetzt.
