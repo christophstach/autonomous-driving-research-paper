@@ -1,3 +1,4 @@
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
 % \documentclass[conference]{IEEEtran}
 \documentclass[conference,compsoc]{IEEEtran}
 % \documentclass[journal]{IEEEtran}
@@ -12,7 +13,16 @@
 
 \ifCLASSOPTIONcompsoc
   % \usepackage[nocompress]{cite}
-  \usepackage[numbers,sort]{natbib}
+  % \usepackage[numbers,sort]{natbib}
+  \usepackage[
+    backend=biber,
+    style=ieee,
+  ]{biblatex}
+
+  % \addbibresource{references/images.bib}
+  % \addbibresource{references/online.bib}
+  \addbibresource{references/online.bib}
+  \addbibresource{references/scientific.bib}
 \else
   \usepackage{cite}
 \fi
